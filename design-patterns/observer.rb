@@ -32,7 +32,7 @@ apple.observers << Apple.new("bharat")
 
 apple.set_status "Mobile is in stock now"
 
-# ---------------------------------------------------------------------------------------------------------
+# ----------------------------------------------------
 
 class Message
   def initialize(observers)
