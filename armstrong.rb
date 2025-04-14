@@ -1,3 +1,5 @@
+# atfer doing cube the given number if the result is same then it's armstrong number
+
 def armstrong?(num)
   original = num
   count = 0
