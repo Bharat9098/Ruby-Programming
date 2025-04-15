@@ -1,3 +1,5 @@
+# pairs of given target bruteforce
+
 def find_pairs(arr, target)
   pairs = []
   n = arr.length
@@ -14,4 +16,4 @@ end
 
 target = 5
 arr = [1,1,4,3,2,5,6,7,3]
-puts find_pairs(arr, sum).inspect
+puts find_pairs(arr, target).inspect
