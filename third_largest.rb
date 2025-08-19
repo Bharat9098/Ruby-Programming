@@ -1,28 +1,22 @@
-def fourth_largest(arr)
+def third_largest(arr)
   largest = 0
   second_l = 0
   third_l = 0
-  fourth_l = 0
 
   arr.each do |num|
     if num > largest
-      fourth_l = third_l
       third_l = second_l
       second_l = largest
       largest = num
     elsif num > second_l
-      fourth_l = third_l
       third_l = second_l
-      second_l = num
+      second_l = largest  
     elsif num > third_l
-      fourth_l = third_l
       third_l = num
-    elsif num > fourth_l
-      fourth_l = num
     end
   end
-  fourth_l
+  third_l
 end
 
-arr = [6,7,2,3,5,9,13]
-puts fourth_largest(arr)
+arr = [6,7,2,3,5,9,13,6,7]
+puts third_largest(arr)
