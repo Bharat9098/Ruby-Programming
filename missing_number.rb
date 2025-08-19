@@ -1,14 +1,14 @@
-def findMissingNumber(number)
-  missing_element = []
-  
-  number.each do |num|
-    break if num == number.last
-    unless number.include?(num.next)
-      missing_element << num + 1
+def missing_number(arr)
+  missing = []
+  arr.each do |element|
+    break if element == arr.last
+    unless arr.include?(element.next)
+      missing << element + 1
     end
   end
 
-  missing_element
+  missing
 end
 
-p findMissingNumber([1,2,4,5,6])
+arr = [1,2,4,5,6,7]
+puts missing_number(arr)
