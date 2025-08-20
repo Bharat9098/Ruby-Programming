@@ -1,10 +1,7 @@
-def factorial(input)
-  fact = 1
-  while(input>1)
-    fact = input*fact
-    input -=1
-  end
-  return fact
+def factorial(n)
+	return 1 if n == 1
+
+	n*factorial(n-1)
 end
 
-puts "#{factorial(5)}"
+puts factorial(5)

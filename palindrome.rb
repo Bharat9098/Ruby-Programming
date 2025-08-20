@@ -1,13 +1,16 @@
-def is_palindrome?(input)
-  left = 0
-  right = input.length - 1
-  while left < right
-    return false if input[left] != input[right]
+def is_palindrome?(a)
+  original = a
+  reversed = 0
 
-    left +=1
-    right -=1
+  while(a > 0)
+    digit  = a % 10
+    reversed = reversed * 10 + digit
+
+    a = a / 10
   end
-  true
+
+  return original == reversed
 end
 
-puts "#{is_palindrome?("som")}"
+a = 121
+puts is_palindrome?(a)
