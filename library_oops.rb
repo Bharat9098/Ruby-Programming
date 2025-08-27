@@ -61,7 +61,5 @@ class User
       puts "#{name} does not have '#{book.title}'"
     end
   end
-
-  
 end
 
